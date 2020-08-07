@@ -1,0 +1,121 @@
+html {
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+h2,h3,
+h6 {
+	color: #14b1ab;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+.form-div p,
+.form-div h5{
+	color: #f3ecc2;
+	font-family:'Raleway', sans-serif;
+	margin: 2rem;
+	padding: 0.5rem;
+}
+.vl {
+  border-left: 2px solid #f3ecc2;
+  margin: auto 10px;
+}
+
+.bg {
+	height: 900px;
+	background-image: url('images/notchup-bg.jpg');
+	background-size: 100% auto;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: multiply;
+	filter: blur(2.5px);
+}
+.nav-styles {
+	background-color: transparent;
+	box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4),
+		0 5px 10px 0 rgba(0, 0, 0, 0.5);
+	padding: 1% 7%;
+}
+.nav-link {
+	margin: auto 0.75rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #f3ecc2;
+}
+.nav-link:hover {
+	color: #f9d56e;
+}
+
+.form-div {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 20%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 3px solid;
+	-moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+	border-image-slice: 1;
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+}
+
+.parent-info,
+.child-info {
+	display: inline-block;
+	margin: 10px;
+}
+
+.trail-form input,
+.trail-form button, 
+.trail-form select {
+	display: block;
+	padding: 7px;
+	margin: 8px auto;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0px 6px 6px 0 rgba(0, 0, 0, 0.4);
+	width: 15rem;
+	font-family: 'Raleway', sans-serif;
+}
+.trail-form button {
+	margin-top: 20px;
+}
+hr {
+	width: 10%;
+	border-top: 1.5px solid rgb(105, 105, 105);
+	margin: 15px auto;
+}
+
+@media (min-width: 572px) {
+	.trail-info input,.trail-form select  {
+		width: 18rem;
+	}
+	.form-div {
+		width: 70%;
+	}
+}
+@media (min-width: 992px) {
+	.form-div {
+		width: 50%;
+	}
+}
+
+footer div {
+	text-align: center;
+	padding: 5px auto;
+}
+.foot-icon {
+	margin: auto 0.5rem;
+	color: #f3ecc2;
+}
+.foot-icon:hover {
+	color: #f9d56e;
+}

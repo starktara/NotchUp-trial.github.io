@@ -1,0 +1,37 @@
+<%- include("header") -%>
+
+<section>
+    <div class="form-div container nav-styles">
+        <h3>Start your Trial NOW!</h3>
+        <form class="trail-form" action="/" method="post">
+            <div class="parent-info">
+                <input type="text" name="pname" placeholder="Parent Name" required />
+                <input type="text" name="contact" placeholder="Contact" maxlength="10" required />
+                <input type="email" name="email" placeholder="Parent Email" required />
+            </div>
+            <div class="child-info">
+                <input type="text" name="cname" placeholder="Child Name" required />
+                <input type="number" name="cage" placeholder="Child Age" required />
+            </div>
+            <hr />
+            <div class="trail-info">
+                <select>
+                    <option selected>Select Course</option>
+                    <option value="1">Scratch Programming</option>
+                    <option value="2"> Game Development</option>
+                    <option value="3"> App Development</option>
+                    <option value="4"> Web Development</option>
+                    <option value="5"> Python Programming</option>
+                    <option value="6"> Artificial Intelligence</option>
+                </select>
+                <input type="date" min=<%=today%> max=<%=weekLater%> />
+                <input type="text" placeholder="slot" />
+            </div>
+            <button type="submit" class="btn btn-outline-warning btn-sm">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>
+
+<%- include("footer") -%>
